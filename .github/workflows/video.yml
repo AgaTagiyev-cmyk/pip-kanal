@@ -1,0 +1,35 @@
+name: video-uret
+on:
+  workflow_dispatch:
+    inputs:
+      ders:
+        description: "Hangi ders?"
+        type: choice
+        default: test-1-2-3
+        options:
+          - test-1-2-3
+          - sayma-1-5-balon
+          - renk-kirmizi
+          - sekiller
+jobs:
+  uret:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: ffmpeg ve font
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: paketler
+        run: pip install edge-tts pyyaml Pillow
+      - name: video uret
+        run: python bot.py "${{ inputs.ders }}"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: video
+          path: cikti/
+          retention-days: 7
