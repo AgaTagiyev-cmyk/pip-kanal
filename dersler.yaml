@@ -72,4 +72,4 @@
     - {text: "A square. Four equal sides.", speaker: narrator, pause: 1.1}
     - {text: "A triangle. Three sides.", speaker: narrator, pause: 1.1}
     - {text: "Which shape do you like best? Point to it!", speaker: mascot, pause: 4.0}
-    - {text: "Good choice! Well done!", speaker: mascot, pause: 0.4}
+    - {text: "Good choice! Well done!", speaker: mascot, pause: 0.4} 
