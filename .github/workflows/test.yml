@@ -1,0 +1,22 @@
+name: test
+on:
+  workflow_dispatch:
+jobs:
+  deneme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ffmpeg kur
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: video yap
+        run: |
+          ffmpeg -y -v error \
+            -f lavfi -i color=c=0x7EC8E3:s=1280x720:d=5:r=24 \
+            -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='CALISIYOR':fontcolor=white:fontsize=90:x=(w-text_w)/2:y=(h-text_h)/2" \
+            -c:v libx264 -pix_fmt yuv420p video.mp4
+      - name: yukle
+        uses: actions/upload-artifact@v4
+        with:
+          name: video
+          path: video.mp4
