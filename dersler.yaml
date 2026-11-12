@@ -1,0 +1,75 @@
+- id: test-1-2-3
+  mode: accumulate
+  label: count
+  objects: ["balloon"]
+  color: red
+  cues: ["one", "two", "three"]
+  thumb_text: "1 2 3"
+  title: "Count to 3 with Red Balloons | Pip"
+  description: "Let's count to three with Pip. Calm and slow, for ages 3-6."
+  parts:
+    - {text: "Hello! I'm Pip!", speaker: mascot, pause: 0.4}
+    - {text: "Let's count to three.", speaker: narrator, pause: 0.6}
+    - {text: "One.", speaker: narrator, pause: 0.5}
+    - {text: "Two.", speaker: narrator, pause: 0.5}
+    - {text: "Three.", speaker: narrator, pause: 0.7}
+    - {text: "Three red balloons!", speaker: narrator, pause: 0.5}
+    - {text: "Well done!", speaker: mascot, pause: 0.3}
+
+- id: sayma-1-5-balon
+  mode: accumulate
+  label: count
+  objects: ["balloon"]
+  color: red
+  cues: ["one", "two", "three", "four", "five"]
+  thumb_text: "1 2 3"
+  title: "Count to 5 with Red Balloons | Learn Numbers for Toddlers"
+  description: "Shall we count to five? Slow, calm counting with Pip. Ages 3-6."
+  parts:
+    - {text: "Hello! I'm Pip!", speaker: mascot, pause: 0.5}
+    - {text: "Shall we count together today?", speaker: mascot, pause: 0.8}
+    - {text: "Let's count the balloons. Ready?", speaker: narrator, pause: 0.9}
+    - {text: "One.", speaker: narrator, pause: 0.6}
+    - {text: "Two.", speaker: narrator, pause: 0.6}
+    - {text: "Three.", speaker: narrator, pause: 0.6}
+    - {text: "Four.", speaker: narrator, pause: 0.6}
+    - {text: "Five.", speaker: narrator, pause: 0.9}
+    - {text: "Five red balloons.", speaker: narrator, pause: 0.8}
+    - {text: "Ooh! Your turn now. How many balloons?", speaker: mascot, pause: 3.5}
+    - {text: "Five! Well done!", speaker: mascot, pause: 0.4}
+    - {text: "Lovely counting. See you next time!", speaker: narrator, pause: 0.4}
+
+- id: renk-kirmizi
+  mode: replace
+  labels: ["RED", "RED", "RED"]
+  objects: ["balloon", "apple", "ball"]
+  color: red
+  cues: ["balloon", "apple", "ball"]
+  title: "Learn the Colour Red | Balloon, Apple, Ball for Toddlers"
+  description: "Three red things, one at a time. Calm pace with real thinking pauses."
+  parts:
+    - {text: "Hi! It's Pip again!", speaker: mascot, pause: 0.5}
+    - {text: "Today we are learning the colour red.", speaker: narrator, pause: 0.9}
+    - {text: "A red balloon.", speaker: narrator, pause: 1.0}
+    - {text: "A red apple.", speaker: narrator, pause: 1.0}
+    - {text: "A red ball.", speaker: narrator, pause: 1.0}
+    - {text: "Everything here is red!", speaker: narrator, pause: 0.8}
+    - {text: "Can you spot something red near you? Have a look!", speaker: mascot, pause: 4.0}
+    - {text: "Brilliant! That's red!", speaker: mascot, pause: 0.4}
+
+- id: sekiller
+  mode: replace
+  labels: ["CIRCLE", "SQUARE", "TRIANGLE"]
+  objects: ["circle", "square", "triangle"]
+  color: blue
+  cues: ["circle", "square", "triangle"]
+  title: "Circle, Square, Triangle | Learn Shapes for Preschool"
+  description: "Three first shapes with Pip. Slow, gentle and easy to follow."
+  parts:
+    - {text: "Hello! Shall we look at shapes?", speaker: mascot, pause: 0.7}
+    - {text: "Let's learn three shapes today.", speaker: narrator, pause: 0.9}
+    - {text: "A circle. Round and round.", speaker: narrator, pause: 1.1}
+    - {text: "A square. Four equal sides.", speaker: narrator, pause: 1.1}
+    - {text: "A triangle. Three sides.", speaker: narrator, pause: 1.1}
+    - {text: "Which shape do you like best? Point to it!", speaker: mascot, pause: 4.0}
+    - {text: "Good choice! Well done!", speaker: mascot, pause: 0.4}
